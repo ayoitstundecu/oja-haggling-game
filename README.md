@@ -57,6 +57,8 @@ To test automatic host transfer, keep B connected as another human and close A's
 
 You can also use the **Deploy to Render** button above to open the preconfigured blueprint directly.
 
+**Live game:** [https://oja-haggling-game.onrender.com](https://oja-haggling-game.onrender.com) · Health: [/api/health](https://oja-haggling-game.onrender.com/api/health)
+
 Room data lives in process memory: a server restart or free-tier sleep that restarts the process clears active rooms. Keep one server instance per deployment; horizontal replicas would not share room state. The QR image uses the free `api.qrserver.com` image endpoint, and the optional display fonts load from Google Fonts; gameplay itself has no runtime package dependency.
 
 ## Troubleshooting

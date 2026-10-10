@@ -2,6 +2,8 @@
 
 **Tagline:** Talk sweet. Trade smart.
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/ayoitstundecu/oja-haggling-game)
+
 ## Project description (150 words)
 
 Ọjà is a multiplayer haggling game set in a bustling Lagos open-air market. Gather three to eight people in a private room, or add a bot for solo practice. Each three-minute round gives every trader ₦10,000, three goods to sell at secret costs, and a private shopping list with values. Make offers, counter up to three times, accept a bargain, or walk away; juggle two negotiations at once. Sellers earn profit above cost, shoppers score savings, and completing a list earns a bonus. Blackouts, fuel scarcity, Owambe celebrations, and a final closing rush keep every round lively. Share a four-character room code or public big-screen link, follow the live board, and celebrate the final leaderboard with awards. The lightweight Python server owns room state, timers, trades, and scoring; browsers stay synchronized through server-sent events. Play on phones, laptops, or any shared screen—no accounts, downloads, real money, or paid services required.
@@ -52,6 +54,8 @@ To test automatic host transfer, keep B connected as another human and close A's
 ## Public deployment
 
 `render.yaml` is a no-build, no-dependency blueprint for a single Render web service. Push this folder to a GitHub repository, then select **New → Blueprint** in Render and connect that repository; Render will provide the public URL. No secrets or paid services are needed to build this demo. On a free instance, the service may sleep while idle.
+
+You can also use the **Deploy to Render** button above to open the preconfigured blueprint directly.
 
 Room data lives in process memory: a server restart or free-tier sleep that restarts the process clears active rooms. Keep one server instance per deployment; horizontal replicas would not share room state. The QR image uses the free `api.qrserver.com` image endpoint, and the optional display fonts load from Google Fonts; gameplay itself has no runtime package dependency.
 

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#193a32">
+  <meta name="description" content="A lively multiplayer Lagos market haggling game. Bring your sharpest eye and best bargaining voice.">
+  <title>Ọjà — The Haggling Game</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.88em' font-size='86'%3E%F0%9F%A7%BA%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="page-grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Ọjà home">
+      <span class="brand-mark">Ọ</span>
+      <span><b>Ọjà</b><small>THE HAGGLING GAME</small></span>
+    </a>
+    <div class="topbar-right">
+      <span class="status-dot"></span><span class="topbar-note">Lagos Market · Live</span>
+      <button id="sound-toggle" class="icon-button" type="button" aria-label="Toggle sound" title="Toggle sound">🔔</button>
+      <button id="help-button" class="icon-button" type="button" aria-label="How to play" title="How to play">?</button>
+    </div>
+  </header>
+  <main id="app" aria-live="polite">
+    <div class="loading-card"><span class="spinner"></span>Opening the market…</div>
+  </main>
+  <div id="toast-stack" class="toast-stack" aria-live="assertive"></div>
+  <div id="overlay-root"></div>
+  <script src="/app.js" defer></script>
+</body>
+</html>

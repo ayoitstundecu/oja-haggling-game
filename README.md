@@ -8,6 +8,10 @@
 
 Ọjà is a multiplayer haggling game set in a bustling Lagos open-air market. Gather three to eight people in a private room, or add a bot for solo practice. Each three-minute round gives every trader ₦10,000, three goods to sell at secret costs, and a private shopping list with values. Make offers, counter up to three times, accept a bargain, or walk away; juggle two negotiations at once. Sellers earn profit above cost, shoppers score savings, and completing a list earns a bonus. Blackouts, fuel scarcity, Owambe celebrations, and a final closing rush keep every round lively. Share a four-character room code or public big-screen link, follow the live board, and celebrate the final leaderboard with awards. The lightweight Python server owns room state, timers, trades, and scoring; browsers stay synchronized through server-sent events. Play on phones, laptops, or any shared screen—no accounts, downloads, real money, or paid services required.
 
+## Cover image
+
+[Download the LinkedIn project cover (PNG, 1600 × 900)](assets/oja-linkedin-cover.png).
+
 ## Run locally
 
 Requires Python 3.9 or newer; there are no Python package dependencies.
